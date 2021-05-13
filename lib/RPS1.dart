@@ -23,7 +23,7 @@ class RPS1 {
   }
 
   String checkWhoWon() {
-    var ai = aIPlay();
+    var ai = aIPlay(); //returns a random string from 0 to 2
     var str = ' the Ai played $ai';
     var conditions = ['You win ! ', 'You lose ! ', 'Its a Draw ! '];
     if (_choice == 'rock' && ai == 'paper' ||
