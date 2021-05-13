@@ -23,7 +23,7 @@ class RPS1 {
   }
 
   String checkWhoWon() {
-    var ai = aIPlay();
+    var ai = aIPLAY();
     var str = ' the Ai played $ai';
     var conditions = ['You win ! ', 'You lose ! ', 'Its a Draw ! '];
     if (_choice == 'rock' && ai == 'paper' ||
@@ -39,7 +39,7 @@ class RPS1 {
     }
   }
 
-  String aIPlay() {
+  String aIPLAY() {
     var plays = ['r', 's', 'p'];
     var r = Random();
     return _lst[plays[r.nextInt(3)]];
