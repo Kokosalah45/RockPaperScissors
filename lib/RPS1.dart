@@ -30,12 +30,10 @@ class RPS1 {
         _choice == 'scissors' && ai == 'rock' ||
         _choice == 'paper' && ai == 'scissors') {
       return conditions[1] + str;
-    } else if (_choice == 'paper' && ai == 'rock' ||
-        _choice == 'rock' && ai == 'scissors' ||
-        _choice == 'scissors' && ai == 'paper') {
-      return conditions[0] + str;
-    } else {
+    } else if (_choice == ai) {
       return conditions[2] + str;
+    } else {
+      return conditions[0] + str;
     }
   }
 
